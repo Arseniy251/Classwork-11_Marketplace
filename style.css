@@ -9,12 +9,12 @@ body header {
   display: flex;
   justify-content: space-between;
 }
-body #products {
+body #products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-body #products .product {
+body #products-grid .product {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 1rem;
@@ -23,13 +23,13 @@ body #products .product {
   flex-direction: column;
   justify-content: space-between;
 }
-body #products .product .product-photo {
+body #products-grid .product .product-photo {
   max-width: 100px;
   box-shadow: 0 0 5px black;
   margin: 0.5rem 0;
   background-color: white;
 }
-body #products .product a {
+body #products-grid .product a {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
   margin: 5px 0;
@@ -45,7 +45,7 @@ body #cart-button {
   background: none;
   border: none;
   border-radius: 50%;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid black;
   cursor: pointer;
   display: flex;
@@ -53,9 +53,9 @@ body #cart-button {
   align-items: center;
   transition: all 0.5s;
 }
-body #cart-button img {
-  max-width: 32px;
-  max-height: 32px;
+body #cart-button i {
+  font-size: 32px;
+  top: 2px;
 }
 body #cart-button:hover {
   background-color: rgb(170, 170, 255);

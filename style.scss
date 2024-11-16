@@ -13,7 +13,7 @@ body {
         justify-content: space-between;
     }
 
-    #products {
+    #products-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
@@ -54,7 +54,7 @@ body {
         background: none;
         border: none;
         border-radius: 50%;
-        padding: 5px;
+        padding: 10px;
         border: 1px solid black;
         cursor: pointer;
         display: flex;
@@ -62,9 +62,9 @@ body {
         align-items: center;
         transition: all .5s;
 
-        img {
-            max-width: 32px;
-            max-height: 32px;
+        i {
+            font-size: 32px;
+            top: 2px;
         }
 
         &:hover {
